@@ -1,27 +1,35 @@
 import { Button } from "./ui/button";
 import { createWhatsappLink } from "@/lib/whatsapp";
-
-const sections = [
-    {id: "products", name: "Productos"},
-    {id: "aboutUs", name: "Nosotros"},
-    {id: "contact", name: "Contacto"},
-];
+import { MobileMenu } from "./mobileMenu";
+import { sections } from "@/lib/navegation";
+import Image from "next/image";
 
 export function Header(){
     return(
-        <header className="sticky top-0 bg-wax border-b border-comb/15 z-50 ">
-            <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-                <span className="font-quicksand text-2xl text-comb">Apiario el Dulce Vuelo</span>
+        <header className="sticky top-0 bg-test/80 border-b border-comb/15 z-50">
+            <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between relative">
 
-                <nav className="hidden md:flex items-center gap-12">
+                <div className="flex flex-row justify-between items-center w-full md:w-auto">
+                    <Image src="/images/LogoDV.svg" alt="Logo" width={110} height={110} />
+                    
+                </div>
+
+                <nav className="hidden md:flex items-center gap-20">
                     {sections.map((section) => (
-                        <a key={section.id} href={`#${section.id}`} className="text-comb hover:text-honey transition">
+                        <a key={section.id} href={`#${section.id}`} className="text-comb hover:text-honey transition lg:text-xl">
                             {section.name}
                         </a>
                     ))}
                 </nav>
+                
+                <div className="flex items/center gap/3">
+                    <div className="hidden sm:block">
+                        <Button href={createWhatsappLink()}>Escribir por Whatsapp</Button>
+                    </div>
+                </div>
 
-                <Button href={createWhatsappLink()}>Escribir por Whatsapp</Button>
+                <MobileMenu />
+
             </div>
         </header>
     )
