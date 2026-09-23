@@ -1,11 +1,18 @@
-import Image from "next/image";
+import { Products } from "@/components/products";
 
 export default function Home() {
   return (
-    <div>
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16">
-        
-      </main>
-    </div>
+    <>
+      <Products/>
+
+      <section id="aboutUs" className="min-h-screen flex items-center justify-center">
+        <p className="text-comb/40">Sección Nosotros (en construcción)</p>
+      </section>
+
+      <section id="contact" className="min-h-screen flex items-center justify-center">
+        <p className="text-comb/40">Sección Contacto (en construcción)</p>
+      </section>
+
+    </>
   );
 }
