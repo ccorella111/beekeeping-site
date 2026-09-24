@@ -9,7 +9,7 @@ export function MobileMenu(){
     const [open, setOpen] = useState(false);
 
     return(
-        <div>
+        <div className="md:hidden">
             <button
             onClick={() => setOpen(!open)}
             aria-label={open ? "Cerrar menú" : "Abrir menú"}
