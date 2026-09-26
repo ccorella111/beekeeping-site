@@ -11,7 +11,7 @@ export function ProductCard({ product }: ProductCardProps) {
     const message = `Hola, quiero consultar sobre ${product.description}`;
 
     return (
-        <div className="bg-wax border border-comb/10 rounded-lg overflow-hidden flex flex-col">
+        <div className="bg-wax border border-comb/10 rounded-lg overflow-hidden flex flex-col shadow-md">
             
             <div className="relative aspect-square bg-comb/5">
                 <Image
