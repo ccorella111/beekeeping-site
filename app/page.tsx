@@ -1,9 +1,12 @@
 import { Products } from "@/components/products";
 import { AboutUs } from "@/components/aboutUs";
+import { Hero } from "@/components/hero";
 
 export default function Home() {
   return (
     <>
+      <Hero/>
+
       <Products/>
 
       <AboutUs/>
