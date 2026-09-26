@@ -6,11 +6,11 @@ import Image from "next/image";
 
 export function Header(){
     return(
-        <header className="sticky top-0 bg-test/80 border-b border-comb/15 z-50">
-            <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between relative">
+        <header className="sticky top-0 bg-test/95 border-b border-comb/15 z-50">
+            <div className="max-w-7xl mx-auto px-4 flex items-center justify-between relative">
 
                 <div className="flex flex-row justify-between items-center w-full md:w-auto">
-                    <Image src="/images/LogoDV.svg" alt="Logo" width={110} height={110} />
+                    <Image src="/images/LogoDV.svg" alt="Logo" width={90} height={90} />
                     
                 </div>
 
