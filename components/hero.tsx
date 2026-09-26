@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { Button } from "./ui/button";
-import { createWhatsappLink } from "@/lib/whatsapp";
 
 export function Hero(){
     return(
