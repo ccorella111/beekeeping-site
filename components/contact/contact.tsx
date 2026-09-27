@@ -1,9 +1,9 @@
 "use client";
 import { FaLocationDot } from "react-icons/fa6";
 import dynamic from "next/dynamic";
-import { Redes } from "./CardInfo";
+import { Redes } from "./infoCard";
 
-const Map = dynamic(() => import("./Map"), {
+const Map = dynamic(() => import("./map"), {
     ssr: false,
     loading: () => (
         <div className="h-96 w-full rounded-2xl bg-gray-100 animate-pulse flex items-center justify-center text-gray-400">
