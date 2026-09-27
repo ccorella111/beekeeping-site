@@ -38,7 +38,6 @@ export function Redes() {
                     </div>
                 </a>
 
-                {/* WhatsApp */}
                 <a
                     href="https://wa.me/50672925888"
                     target="_blank"
