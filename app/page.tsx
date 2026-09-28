@@ -1,6 +1,7 @@
 import { Products } from "@/components/products";
 import { AboutUs } from "@/components/aboutUs";
 import { Hero } from "@/components/hero";
+import { Contact } from "@/components/contact/contact";
 
 export default function Home() {
   return (
@@ -10,10 +11,8 @@ export default function Home() {
       <Products/>
 
       <AboutUs/>
-
-      <section id="contact" className="min-h-screen flex items-center justify-center">
-        <p className="text-comb/40">Sección Contacto (en construcción)</p>
-      </section>
+      
+      <Contact/>
 
     </>
   );
