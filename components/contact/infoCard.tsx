@@ -50,7 +50,7 @@ export function Redes() {
 
                     <div>
                         <p className="font-semibold">
-                            wAtsApp
+                            WhatsApp
                         </p>
                         <p className="text-sm text-gray-500">
                             contáctanos por WhatsApp
