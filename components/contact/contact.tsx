@@ -29,12 +29,12 @@ export function Contact() {
                 <div className="h-px flex-1 bg-comb/20"></div>
             </div>
 
-            <div className="grid grid-cols-2 gap-2">
-                <div> 
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10">
+                <div>
                      <Redes />
                 </div>
                 
-                <div>
+                <div className="min-h-96">
                     <Map />
                 </div>
             </div>
